@@ -16,10 +16,10 @@ _Учебный проект_
 ✔Клонируйте репозиторий с сайта Github:
 
 ```sh
->git clone https://github.com/Irin-Baro/api_final_yatube.git
+git clone https://github.com/Irin-Baro/api_final_yatube.git
 ```
 
-✔ Установите и активируйте виртуальное окружение
+✔ Установите и активируйте виртуальное окружение:
 
 ```sh
 Для пользователей Windows:
@@ -27,7 +27,7 @@ python -m venv venv
 source venv/Scripts/activate
 ```
 
-✔ Установите зависимости из файла requirements.txt
+✔ Установите зависимости из файла requirements.txt:
 
 ```sh
 python -m pip install --upgrade pip
@@ -47,17 +47,23 @@ python manage.py runserver
 ```
 
 ### Пример запроса
-#####GET /api/v1/posts/
+>GET /api/v1/posts/
 
+```sh
 >http://127.0.0.1:8000/api/v1/posts/
+```
 
 Response samples:
->200
+```sh
+200
+```
 
 Content type:
->_application/json_
-
+```sh
+_application/json_
 ```
+
+```sh
 {
   "count": 123,
   "next": "http://api.example.org/accounts/?offset=400&limit=100",
@@ -79,4 +85,4 @@ Content type:
 
 | Автор | Учебная платформа |
 | ------ | ------ |
-| Irin-Baro | Yandex-Practicum |
+| [Irin-Baro](https://github.com/Irin-Baro) | Yandex-Practicum |
