@@ -47,10 +47,10 @@ python manage.py runserver
 ```
 
 ### Пример запроса
->GET /api/v1/posts/
+- GET /api/v1/posts/
 
 ```sh
->http://127.0.0.1:8000/api/v1/posts/
+http://127.0.0.1:8000/api/v1/posts/
 ```
 
 Response samples:
