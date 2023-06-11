@@ -85,4 +85,4 @@ _application/json_
 
 | Автор | Учебная платформа |
 | ------ | ------ |
-| [Irin-Baro](https://github.com/Irin-Baro) | Yandex-Practicum |
+| [Irin-Baro](https://github.com/Irin-Baro) | [Yandex-Practicum](https://practicum.yandex.ru/backend-developer/) |

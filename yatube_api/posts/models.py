@@ -32,8 +32,6 @@ class Group(models.Model):
 
 class Post(models.Model):
     """Модель записи."""
-    NUMBER_OF_CHAR: int = 15
-
     text = models.TextField(
         verbose_name='Текст записи',
         help_text='Разместите здесь текст'
@@ -72,13 +70,11 @@ class Post(models.Model):
         verbose_name_plural = 'Записи'
 
     def __str__(self):
-        return self.text[:self.NUMBER_OF_CHAR]
+        return self.text
 
 
 class Comment(models.Model):
     """Модель комментария."""
-    NUMBER_OF_CHAR: int = 15
-
     post = models.ForeignKey(
         Post,
         on_delete=models.CASCADE,
@@ -107,7 +103,7 @@ class Comment(models.Model):
         verbose_name_plural = 'Комментарии'
 
     def __str__(self):
-        return self.text[:self.NUMBER_OF_CHAR]
+        return self.text
 
 
 class Follow(models.Model):
